@@ -10,10 +10,10 @@ while attempts > 0:
     attempts -= 1
     guessed_number = int(input("Guess the number?"))
     if guessed_number == random_number:
-        print ("You guessed correctly")
+        print("You guessed correctly")
         attempts = 0
-    elif guessed_number > random_number:
-        print ("The number you gave is too low")
+    elif guessed_number < random_number:
+        print("The number you gave is too low")
     else:
         print("The number you gave is too high")
 
